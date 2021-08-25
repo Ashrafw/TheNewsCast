@@ -1,0 +1,24 @@
+.socials {
+  width: 500px;
+  margin: 30px auto;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    i:hover {
+      color: rgb(15, 78, 196);
+    }
+  }
+}
+
+footer {
+  background-color: black;
+  color: whitesmoke;
+  padding: 15px 20px;
+}
+
+@media (max-width: 590px) {
+  .socials {
+    width: 60%;
+    margin: 30px auto;
+  }
+}

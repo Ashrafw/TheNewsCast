@@ -1,0 +1,225 @@
+// ======================================================
+
+.card-large-section {
+  background-color: rgba(255, 235, 205, 0.2);
+  border-top: 2px solid rgb(205, 205, 205);
+  border-bottom: 2px solid rgb(205, 205, 205);
+  margin: 10px 0;
+  // text-align: center;
+  font-family: 'Playfair Display', serif;
+
+  // flex-direction: column;
+
+  .cards-large {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10fr 8fr;
+    // gap: 5px;
+    .card {
+      cursor: pointer;
+      margin: 10px 0 30px;
+      // width: 32%;
+      padding: 0 10px;
+      border-right: 2px solid rgb(205, 205, 205);
+      h3 {
+        font-size: 2.2rem;
+        padding: 4px 0;
+        margin-bottom: 4px;
+      }
+      p {
+        line-height: 1.4;
+        color: rgb(72, 72, 72);
+      }
+      a {
+        color: rgba(255, 0, 0, 0.728);
+        display: flex;
+        align-items: center;
+        h5 {
+          font-size: 1rem;
+          font-family: inherit;
+          font-weight: 500;
+          padding: 6px 0 8px;
+        }
+        i {
+          margin-left: 8px;
+          font-size: 1.2rem;
+        }
+      }
+      a:hover {
+        color: rgb(255, 0, 0);
+        h5 {
+          font-weight: 600;
+        }
+      }
+      .image {
+        width: 100%;
+        margin: 10px 0;
+
+        img {
+          width: 100%;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+      }
+    }
+    .card-sub-main {
+      display: flex;
+      flex-direction: column;
+      .image {
+        width: 100%;
+        margin: 10px 0;
+
+        img {
+          width: 100%;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+      }
+    }
+    .card-sub:hover,
+    .card-item-3:hover {
+      h3 {
+        color: rgba(0, 0, 0, 0.652);
+      }
+    }
+
+    .card:last-child {
+      border-right: none;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .card-large-section {
+    margin: 10px 0;
+    // text-align: center;
+    font-family: 'Playfair Display', serif;
+
+    // flex-direction: column;
+
+    .cards-large {
+      .card {
+        margin: 20px 0 30px;
+        // width: 32%;
+        padding: 5px 10px;
+
+        h3 {
+          font-size: 1.6rem;
+          padding: 4px 0;
+          margin-bottom: 4px;
+        }
+        p {
+          line-height: 1.4;
+
+          display: none;
+        }
+
+        .image {
+          width: 100%;
+          margin: 10px 0;
+
+          img {
+            width: 100%;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+          }
+        }
+      }
+      .card-sub-main {
+        display: flex;
+        flex-direction: column;
+        .image {
+          width: 100%;
+          margin: 10px 0;
+
+          img {
+            width: 100%;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card-large-section {
+    margin: 10px 0 5px;
+
+    .cards-large {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 10fr 8fr;
+      // gap: 5px;
+      .card {
+        cursor: pointer;
+        margin: 10px 0 20px;
+        // width: 32%;
+        padding: 5px 10px;
+
+        h3 {
+          font-size: 1.1rem;
+          padding: 4px 0;
+          margin-bottom: 4px;
+        }
+      }
+      .card-sub-main {
+        display: flex;
+        flex-direction: column;
+        .image {
+          width: 90%;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .card-large-section {
+    margin: 10px 0 5px;
+
+    .cards-large {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 10fr 8fr;
+      // gap: 5px;
+      .card {
+        cursor: pointer;
+        margin: 10px 0 20px;
+        // width: 32%;
+        padding: 5px 10px;
+
+        h3 {
+          font-size: 1rem;
+          padding: 2px 0;
+          margin-bottom: 1px;
+        }
+        a {
+          color: rgba(255, 0, 0, 0.728);
+          display: flex;
+          align-items: center;
+          h5 {
+            font-size: 0.8rem;
+            font-family: inherit;
+            font-weight: 500;
+            padding: 4px 0;
+          }
+          i {
+            margin-left: 8px;
+            font-size: 1rem;
+          }
+        }
+      }
+      .card-sub-main {
+        display: flex;
+        flex-direction: column;
+        .image {
+          width: 90%;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}

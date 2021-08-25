@@ -1,0 +1,147 @@
+#navone {
+  .nav-title {
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .title {
+      font-family: 'Girassol', cursive;
+      font-size: 5.5rem;
+    }
+    .title:hover {
+      color: rgb(40, 40, 40);
+    }
+
+    .detail {
+      font-size: 1.1rem;
+      a {
+        color: rgb(124, 124, 124);
+        padding: 0 8px;
+      }
+      a:hover {
+        color: black;
+      }
+    }
+  }
+  .nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4px 0;
+    a {
+      color: rgb(124, 124, 124);
+      padding: 5px 8px;
+    }
+    a:hover {
+      color: black;
+    }
+
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+  }
+
+  hr {
+    width: 92%;
+    background-color: #919191;
+    height: 1px;
+    margin: auto;
+    border: 0 none;
+  }
+}
+
+@media (max-width: 1024px) {
+  #navone {
+    .nav-title {
+      .title {
+        font-size: 4rem;
+      }
+      .title:hover {
+        color: rgb(40, 40, 40);
+      }
+
+      .detail {
+        font-size: 1.1rem;
+      }
+    }
+    .nav-main {
+      a {
+        color: rgb(124, 124, 124);
+        padding: 5px 8px;
+      }
+
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 876px) {
+  #navone {
+    .nav-title {
+      .title {
+        font-size: 3rem;
+      }
+
+      .detail {
+        font-size: 0.9rem;
+      }
+    }
+    .nav-main {
+      a {
+        color: rgb(124, 124, 124);
+        padding: 5px 8px;
+      }
+
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #navone {
+    .nav-title {
+      .title {
+        font-size: 2.2rem;
+      }
+
+      .detail {
+        font-size: 0.8rem;
+      }
+    }
+    .nav-main {
+      margin: 2px 0;
+      a {
+        color: rgb(124, 124, 124);
+        padding: 4px 2px 1px;
+      }
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  #navone {
+    .nav-title {
+      .title {
+        font-size: 1.4rem;
+      }
+
+      .detail {
+        font-size: 0.6rem;
+        i {
+          display: none;
+        }
+      }
+    }
+    .nav-main {
+      .extra {
+        color: rgb(124, 124, 124);
+        padding: 5px 2px;
+        display: none;
+      }
+      font-size: 0.8rem;
+      .extra {
+        display: none;
+      }
+    }
+  }
+}

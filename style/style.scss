@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Girassol&family=Karma:wght@300;400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* <!-- Font families --> */
+/*font-family: 'Playfair Display', serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Girassol', cursive;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 10px 0 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin: auto;
+  max-width: 1400px;
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 876px) {
+  .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+// @media (min-width: 520px) {
+//   .container {
+//     // border-right: 1px solid rgba(219, 219, 219, 0.5);
+//     // border-left: 1px solid rgba(219, 219, 219, 0.5);
+//   }
+// }
+@import 'nav';
+@import 'articles';
+@import 'socials';
+@import 'jum';
+@import 'cards';
+@import 'largecards';
+@import 'smallcards';
